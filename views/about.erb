@@ -1,0 +1,23 @@
+<h1>About </h1>
+
+
+p : <%=  name %>
+
+<% if @name %>
+<h5>Hello <%= @name %></h5>
+<% end %>
+
+<% content_for :one do %>
+<p>about one</p>
+  <script>
+    alert('about show');
+  </script>
+<% end %>
+
+
+
+<% content_for :msg do %>
+
+ <p> msg: welcome message</p>
+
+<% end %>

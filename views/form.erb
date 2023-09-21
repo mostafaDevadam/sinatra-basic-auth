@@ -1,0 +1,23 @@
+<p>Form</p>
+
+<div></div>
+
+<% if @msg %>
+  <p><%= @msg %></p>
+<% end %>
+
+<% if @username %>
+  <p><%= @username %></p>
+<% end %>
+
+<form action="/form" method="post">
+    <input type="text" name="name" value="<%= @name %>">
+    <input type="submit">
+</form>
+
+<div>--------</div>
+<ul>
+    <% @names.each do |name| %>
+    <li><%= name %></li>
+    <% end %>
+</ul>
